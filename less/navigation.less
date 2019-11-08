@@ -3,6 +3,10 @@ nav {
     .flexNav();
     .navStyles();
 
+    @media @phone {
+      width: 100%;  
+    }
+
     h1 {
         font-size: 4.5rem;
         padding: 0.8% 0;
@@ -19,5 +23,9 @@ nav {
         width: 25%;
         font-size: 1.6rem;
         padding-bottom: 1%;
+
+        @media @phone {
+            width: 90%;
+        }
     }
 }
