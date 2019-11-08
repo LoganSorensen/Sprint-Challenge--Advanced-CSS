@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    -An adaptive site can be formatted to fit a variety of screen sizes much like a responsive site. However, these two differ in the way they go about this. An adaptive site requires a different template for each screen size, whereas a responsive site uses one template that can be modified for various screen sizes.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    -To design a site with the mobile first mentality means that the page is initially formatted for a mobile screen. As you move on to style larger versions of the site, you use min-width to set your breakpoints. Conversely, desktop first design begins with the format of the desktop site and uses max-width to set breakpoints.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    -Since most browers have a default font size of 16 pixels, using font-size: 62.5% in the html tag sets the font for the whole page to 10 pixels. This makes mental math much easier when changing the font size using rem units.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    -Preprocessing uses a different language to write more complex CSS. This language can then be compiled into the CSS file allowing developers to add more functionality to a site than would normally be possible with the limitations of CSS.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    -My favorite concept in preprocessing is the fact that child elements can be nested inside their parents. This came very naturally to me and it helps me keep my code organized. I think I have the most trouble with parametric mixins, primarily because at this point they don't feel very efficient. So far I've had to force myself to use them because they don't seem to be any simpler than writing my code the way I used to.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -50,10 +60,10 @@ Follow these steps to set up your project:
 
 ### Git Set up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [X] Create a forked copy of this project.
+- [X] Add your project manager as collaborator on Github.
+- [X] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [X] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
  
@@ -66,11 +76,11 @@ Follow these steps for completing your project.
 
 ### Preprocessor Set up
 
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
-* [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+* [X] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [X] Open your terminal and navigate to your preprocessing project by using the `cd` command
+* [X] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [X] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
+* [X] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ## Minimum Viable Product
 
@@ -78,7 +88,7 @@ Your finished project must include all of the following requirements:
 
 ### Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
+* [X] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
 ```markdown
 1.variables.less
@@ -96,7 +106,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
 
-* [ ] Add a viewport meta tag to the head of your index.html page
+* [X] Add a viewport meta tag to the head of your index.html page
 
 * [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 
